@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkali OS Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: url('https://w0.peakpx.com/wallpaper/705/181/HD-wallpaper-amoled-black-android-dark-logo.jpg') no-repeat center center fixed; background-size: cover; color: white; font-family: 'Inter', sans-serif; height: 100vh; overflow: hidden; }
+        .glass { background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .app-icon { transition: transform 0.2s; }
+        .app-icon:active { transform: scale(0.9); }
+        .dock { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 400px; height: 80px; border-radius: 24px; display: flex; justify-content: space-around; align-items: center; padding: 0 10px; }
+    </style>
+</head>
+<body class="p-4 flex flex-col items-center">
+
+    <header class="w-full flex justify-between items-center px-4 pt-2 pb-6 text-[10px] font-bold tracking-widest text-gray-300">
+        <div>9:16 AM</div>
+        <div class="flex gap-2">
+            <span>4G+</span>
+            <span>LTE</span>
+            <span class="text-green-500">100%</span>
+        </div>
+    </header>
+
+    <div class="w-full max-w-sm glass rounded-full px-5 py-3 flex items-center gap-3 mb-10">
+        <span class="text-yellow-500 text-sm">G</span>
+        <input type="text" placeholder="Search Google..." class="bg-transparent border-none outline-none text-xs w-full placeholder-gray-500">
+        <span class="text-gray-400">🎤</span>
+    </div>
+
+    <main class="grid grid-cols-4 gap-y-10 gap-x-4 w-full max-w-sm px-2">
+        <a href="/ai-artist" class="flex flex-col items-center gap-2 app-icon">
+            <div class="w-14 h-14 bg-yellow-600 rounded-2xl flex items-center justify-center shadow-lg text-2xl">🎨</div>
+            <span class="text-[10px]">AI Artist</span>
+        </a>
+
+        <a href="/naira-tracker" class="flex flex-col items-center gap-2 app-icon">
+            <div class="w-14 h-14 bg-green-700 rounded-2xl flex items-center justify-center shadow-lg text-2xl">₦</div>
+            <span class="text-[10px]">NGN Hub</span>
+        </a>
+
+        <a href="/mint-flow" class="flex flex-col items-center gap-2 app-icon">
+            <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg text-2xl">🛍️</div>
+            <span class="text-[10px]">Store</span>
+        </a>
+
+        <a href="/arbitrage-calc" class="flex flex-col items-center gap-2 app-icon">
+            <div class="w-14 h-14 bg-purple-600 rounded-2xl flex items-center justify-center shadow-lg text-2xl">🧮</div>
+            <span class="text-[10px]">Tools</span>
+        </a>
+    </main>
+
+    <div class="dock glass">
+        <div class="w-12 h-12 bg-green-500 rounded-2xl flex items-center justify-center shadow-md text-xl">📞</div>
+        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md text-xl">💬</div>
+        <div class="w-12 h-12 bg-blue-500 rounded-2xl flex items-center justify-center shadow-md text-xl">🌐</div>
+        <div class="w-12 h-12 bg-red-500 rounded-2xl flex items-center justify-center shadow-md text-xl">🎥</div>
+    </div>
+
+</body>
+</html>
